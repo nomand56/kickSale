@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import { Container } from "@mui/material";
 import './App.css';
-
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Card from "./components/Cards"
+import Planet from "./components/Planet";
+import BasicTable from "./components/Table";
+import FAQ from "./components/FAQ";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div style={{ maxWidth: "1520px", margin: "auto" }}>
+
+
+      < Navbar />
+      <Hero />
+      <Card />
+      <Planet />
+      <BasicTable />
+      <FAQ />
+
     </div>
+
   );
 }
 
